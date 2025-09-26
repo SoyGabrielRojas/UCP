@@ -90,7 +90,7 @@ func Ejercicio7() {
 	socios, _ := strconv.Atoi(strings.TrimSpace(sociosStr))
 	for i := 0; i < socios; i++ {
 		fmt.Print("\nNúmero de socio: ")
-		_, _ = reader.ReadString('\n') // num_socio, not used
+		_, _ = reader.ReadString('\n')
 		fmt.Print("Edad: ")
 		edadStr, _ := reader.ReadString('\n')
 		edad, _ := strconv.Atoi(strings.TrimSpace(edadStr))
