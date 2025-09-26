@@ -1,6 +1,7 @@
 # Ejercicios de Programación - Go y Python
 
-Este repositorio contiene las soluciones a las guías de ejercicios de la materia **Programación**, utilizando principalmente el lenguaje **Go** y, en un caso puntual, **Python** para una mejor visualización de matrices.
+Este repositorio reúne mis soluciones a las guías de la materia Programación Estructurada.
+La mayoría de los ejercicios están hechos en Go, aunque en un caso puntual usé Python porque me resultó más cómodo para mostrar matrices.
 
 ## Estructura del repositorio
 
@@ -10,15 +11,13 @@ Este repositorio contiene las soluciones a las guías de ejercicios de la materi
 
 ## ¿Por qué Go?
 
-Go es un lenguaje moderno, eficiente y fácil de aprender, ideal para practicar lógica y estructuras de datos. En cada guía, todos los ejercicios están en un solo archivo `.go` para facilitar la entrega, la corrección y la ejecución, siguiendo la modalidad habitual de la cátedra.
-
-Cada función dentro del archivo corresponde a un ejercicio diferente, y se accede a través de un menú interactivo en la terminal.
-
-Y principalmente porque me gusta ;)
+Go me parece un lenguaje bastante robusto y eficiente.
+Sé que suele usarse más para backend, pero igual me gusta mucho y me pareció una buena oportunidad para practicarlo.
 
 ## ¿Por qué Python para matrices?
 
-Python permite mostrar matrices de manera más visual y sencilla, gracias a su sintaxis y librerías. Por eso, en la **Guía 5** se incluye un ejercicio en Python para comparar la visualización con Go.
+Porque Python es mucho más visual para trabajar con matrices. Su sintaxis y librerías hacen que se vea todo más claro que en Go.
+Por eso, en la Guía 5 incluí un ejercicio en Python.
 
 ## ¿Cómo ejecutar los ejercicios?
 
@@ -49,7 +48,7 @@ Python permite mostrar matrices de manera más visual y sencilla, gracias a su s
 ---
 
 **Nota:**  
-En Go, todos los ejercicios de cada guía están en un solo archivo para simplificar la entrega y ejecución, pero cada función corresponde a un ejercicio distinto y se accede mediante un menú interactivo.
+En Go, puse todos los ejercicios de cada guía en un solo archivo para simplificar la entrega y ejecución, pero cada función corresponde a un ejercicio distinto y se accede mediante un menú interactivo.
 
 ---
 
