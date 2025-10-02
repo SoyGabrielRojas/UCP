@@ -1,5 +1,7 @@
 # Ejercicios de Programación - Go y Python
 
+[![Repositorio](https://img.shields.io/badge/GitHub-Repositorio-blue?style=for-the-badge&logo=github)](https://github.com/SoyGabrielRojas/UCP)
+
 Este repositorio reúne mis soluciones a las guías de la materia **Programación Estructurada**.  
 La mayoría de los ejercicios están hechos en **Go**, aunque en un caso puntual usé **Python** porque me resultó más cómodo para mostrar matrices.
 
