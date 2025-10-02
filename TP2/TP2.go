@@ -113,9 +113,9 @@ func ejercicio4() {
 	for i := 0; i < empleados; i++ {
 		fmt.Printf("Ingrese el código del empleado %d (1-100): ", i+1)
 		fmt.Scan(&codigos[i])
-		fmt.Printf("Ingrese horas normales trabajadas: ")
+		fmt.Printf("Ingrese horas normales trabajadas (por semana): ")
 		fmt.Scan(&horasNormales[i])
-		fmt.Printf("Ingrese horas extras trabajadas: ")
+		fmt.Printf("Ingrese horas extras trabajadas (por semana): ")
 		fmt.Scan(&horasExtras[i])
 	}
 

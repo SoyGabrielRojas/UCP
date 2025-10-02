@@ -68,15 +68,15 @@ def ejercicio3():
     print()
 
 def ejercicio4():
-    empleados = 3  # Puedes cambiar la cantidad de empleados
+    empleados = 3  
     codigos = []
     horas_normales = []
     horas_extras = []
 
     for i in range(empleados):
         codigo = int(input(f"Ingrese el código del empleado {i+1} (1-100): "))
-        horas_n = int(input("Ingrese horas normales trabajadas: "))
-        horas_e = int(input("Ingrese horas extras trabajadas: "))
+        horas_n = int(input("Ingrese horas normales trabajadas (por semana): "))
+        horas_e = int(input("Ingrese horas extras trabajadas (por semana): "))
         codigos.append(codigo)
         horas_normales.append(horas_n)
         horas_extras.append(horas_e)
