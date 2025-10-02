@@ -22,6 +22,9 @@ def ejercicio1():
                 min_pos = (i, j)
     print(f"Máximo: {max_val} en posición {max_pos}")
     print(f"Mínimo: {min_val} en posición {min_pos}")
+    print("Matriz ingresada:")
+    for fila in matriz:
+        print(" ".join(str(x) for x in fila))
     return matriz
 
 def ejercicio2(matriz):

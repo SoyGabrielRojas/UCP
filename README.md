@@ -61,3 +61,43 @@ El archivo principal es **`TP2.go`**, que contiene un menú interactivo con vari
 
    ```bash
    go run TP2.go
+   ```
+
+### Opción 2: Usar el ejecutable compilado (Windows)
+
+Si usas el archivo `TP2.exe` compilado, Windows puede mostrar esta advertencia de seguridad:
+
+![Advertencia de SmartScreen](exe1.png)
+
+**Para ejecutarlo correctamente:**
+1. Haz clic en **"More info"**
+2. Luego aparecerá el botón **"Run anyway"**
+3. Haz clic en **"Run anyway"** para ejecutar el programa
+
+> ⚠️ Esto sucede porque el ejecutable no tiene firma digital, pero es seguro si lo compilaste tú mismo.
+
+### Opción 3: Compilar desde código fuente
+
+```bash
+go build -o TP2.exe TP2.go
+```
+
+---
+
+## Nota sobre seguridad en Windows
+
+Los ejecutables compilados localmente pueden activar **Microsoft Defender SmartScreen**. Esto es normal y no indica que el código sea malicioso. Simplemente significa que el archivo no está firmado digitalmente por una entidad reconocida.
+
+**Opciones seguras:**
+- Ejecutar con `go run` (no genera .exe)
+- Compilar y ejecutar desde terminal
+- Hacer clic en **"More info"** → **"Run anyway"** si usas el .exe 
+![SmartScreen](TP2\exe1.png)
+![SmartScreen](TP2\exe2.png)
+
+---
+
+## Requisitos
+
+- **Go** 1.18 o superior (para ejecutar el código fuente)
+- **Python** 3.6+ (solo para el ejercicio de matrices en Guia5/)
