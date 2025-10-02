@@ -51,6 +51,25 @@ El archivo principal es **`TP2.go`**, que contiene un menú interactivo con vari
 
 ---
 
+## TP2 en Python
+
+Además del archivo en Go, incluí **`TP2.py`** con los mismos ejercicios del TP2, pero en Python.  
+Esto es útil si tienes problemas para ejecutar el `.exe` en Windows, o si prefieres no instalar Go localmente.
+
+Para ejecutarlo:
+
+1. Instala Python desde [https://www.python.org/downloads/](https://www.python.org/downloads/).
+2. Abre una terminal en la carpeta `TP2`.
+3. Ejecuta el archivo con:
+
+   ```bash
+   python TP2.py
+   ```
+
+El menú y los ejercicios funcionan igual que en Go, pero usando la consola de Python.
+
+---
+
 ## Cómo ejecutar los ejercicios
 
 ### Opción 1: Ejecutar el código fuente (Go instalado)
