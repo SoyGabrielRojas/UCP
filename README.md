@@ -109,6 +109,7 @@ Los ejecutables compilados localmente pueden activar **Microsoft Defender SmartS
 - Ejecutar con `go run` (no genera .exe)
 - Compilar y ejecutar desde terminal
 - Hacer clic en **"More info"** → **"Run anyway"** si usas el .exe 
+
 ![SmartScreen](TP2/exe2.png)
 
 ---
