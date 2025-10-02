@@ -67,7 +67,7 @@ El archivo principal es **`TP2.go`**, que contiene un menú interactivo con vari
 
 Si usas el archivo `TP2.exe` compilado, Windows puede mostrar esta advertencia de seguridad:
 
-![Advertencia de SmartScreen](exe1.png)
+![Advertencia de SmartScreen](TP2/exe1.png)
 
 **Para ejecutarlo correctamente:**
 1. Haz clic en **"More info"**
