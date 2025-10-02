@@ -93,9 +93,7 @@ Si usas el archivo `TP2.exe` compilado, Windows puede mostrar esta advertencia d
 2. Luego aparecerá el botón **"Run anyway"**
 3. Haz clic en **"Run anyway"** para ejecutar el programa
 
-> ⚠️ Esto sucede porque el ejecutable no tiene firma digital, pero es seguro si lo compilaste tú mismo.
-
-### Opción 3: Compilar desde código fuente
+> ⚠️ Esto sucede porque el ejecutable no tiene firma digital, pero es seguro, ya que es una compilacion echa en go:
 
 ```bash
 go build -o TP2.exe TP2.go
