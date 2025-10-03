@@ -134,10 +134,13 @@ func ejercicio3() {
 }
 
 func ejercicio4() {
-	const empleados = 3
-	var codigos [empleados]int
-	var horasNormales [empleados]int
-	var horasExtras [empleados]int
+	var empleados int
+	fmt.Print("Ingrese la cantidad de empleados: ")
+	fmt.Scan(&empleados)
+
+	codigos := make([]int, empleados)
+	horasNormales := make([]int, empleados)
+	horasExtras := make([]int, empleados)
 
 	for i := 0; i < empleados; i++ {
 		fmt.Printf("Ingrese el código del empleado %d (1-100): ", i+1)
@@ -148,7 +151,7 @@ func ejercicio4() {
 		fmt.Scan(&horasExtras[i])
 	}
 
-	fmt.Println("\n Informe de empleados")
+	fmt.Println("\n--- Informe de empleados ---")
 	for i := 0; i < empleados; i++ {
 		pagoNormal := float64(horasNormales[i]) * 2350
 		pagoExtra := float64(horasExtras[i]) * 3500
