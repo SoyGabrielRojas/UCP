@@ -89,7 +89,7 @@ def ejercicio3():
         print()
 
 def ejercicio4():
-    empleados = 3  
+    empleados = int(input("Ingrese la cantidad de empleados: "))
     codigos = []
     horas_normales = []
     horas_extras = []
@@ -107,8 +107,11 @@ def ejercicio4():
         pago_normal = horas_normales[i] * 2350
         pago_extra = horas_extras[i] * 3500
         total = pago_normal + pago_extra
-        print(f"Código: {codigos[i]} | Horas normales: {horas_normales[i]} | $ normales: {pago_normal:.2f} | Horas extras: {horas_extras[i]} | $ extras: {pago_extra:.2f} | Total: {total:.2f}")
-
+        print(f"Código: {codigos[i]} | "
+              f"Horas normales: {horas_normales[i]} | $ normales: {pago_normal:.2f} | "
+              f"Horas extras: {horas_extras[i]} | $ extras: {pago_extra:.2f} | "
+              f"Total: {total:.2f}")
+        
 def main():
     matriz_ej1 = None
     while True:
