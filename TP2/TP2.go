@@ -63,7 +63,8 @@ func ejercicio3() {
 	var p int
 	fmt.Print("Ingrese el orden de la matriz cuadrada (misma cantidad de filas y columnas): ")
 	fmt.Scan(&p)
-	var matriz = make([][]int, p)
+
+	matriz := make([][]int, p)
 	for i := range matriz {
 		matriz[i] = make([]int, p)
 	}
@@ -75,33 +76,61 @@ func ejercicio3() {
 		}
 	}
 
-	fmt.Print("(Elementos donde fila = columna) Diagonal principal: ")
+	fmt.Println("\nMatriz completa:")
 	for i := 0; i < p; i++ {
-		fmt.Printf("%d ", matriz[i][i])
-	}
-	fmt.Println()
-
-	fmt.Print("(Elementos donde fila + columna = orden - 1) Diagonal secundaria: ")
-	for i := 0; i < p; i++ {
-		fmt.Printf("%d ", matriz[i][p-1-i])
-	}
-	fmt.Println()
-
-	fmt.Print("(Elementos arriba de la diagonal principal) Triangular superior: ")
-	for i := 0; i < p; i++ {
-		for j := i + 1; j < p; j++ {
-			fmt.Printf("%d ", matriz[i][j])
+		for j := 0; j < p; j++ {
+			fmt.Printf("%4d", matriz[i][j])
 		}
+		fmt.Println()
 	}
-	fmt.Println()
 
-	fmt.Print("(Elementos debajo de la diagonal principal) Triangular inferior: ")
-	for i := 1; i < p; i++ {
-		for j := 0; j < i; j++ {
-			fmt.Printf("%d ", matriz[i][j])
+	fmt.Println("\nDiagonal principal:")
+	for i := 0; i < p; i++ {
+		for j := 0; j < p; j++ {
+			if i == j {
+				fmt.Printf("%4d", matriz[i][j])
+			} else {
+				fmt.Printf("    ")
+			}
 		}
+		fmt.Println()
 	}
-	fmt.Println()
+
+	fmt.Println("\nDiagonal secundaria:")
+	for i := 0; i < p; i++ {
+		for j := 0; j < p; j++ {
+			if j == p-1-i {
+				fmt.Printf("%4d", matriz[i][j])
+			} else {
+				fmt.Printf("    ")
+			}
+		}
+		fmt.Println()
+	}
+
+	fmt.Println("\nTriangular superior:")
+	for i := 0; i < p; i++ {
+		for j := 0; j < p; j++ {
+			if j > i {
+				fmt.Printf("%4d", matriz[i][j])
+			} else {
+				fmt.Printf("    ")
+			}
+		}
+		fmt.Println()
+	}
+
+	fmt.Println("\nTriangular inferior:")
+	for i := 0; i < p; i++ {
+		for j := 0; j < p; j++ {
+			if j < i {
+				fmt.Printf("%4d", matriz[i][j])
+			} else {
+				fmt.Printf("    ")
+			}
+		}
+		fmt.Println()
+	}
 }
 
 func ejercicio4() {
