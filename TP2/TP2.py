@@ -38,6 +38,7 @@ def ejercicio2(matriz):
 def ejercicio3():
     p = int(input("Ingrese el orden de la matriz cuadrada: "))
     matriz = []
+
     for i in range(p):
         fila = []
         for j in range(p):
@@ -45,27 +46,47 @@ def ejercicio3():
             fila.append(valor)
         matriz.append(fila)
 
-    print("Diagonal principal:", end=" ")
-    for i in range(p):
-        print(matriz[i][i], end=" ")
-    print()
+    print("\nMatriz completa:")
+    for fila in matriz:
+        for valor in fila:
+            print(f"{valor:4}", end="")
+        print()
 
-    print("Diagonal secundaria:", end=" ")
+    print("\nDiagonal principal:")
     for i in range(p):
-        print(matriz[i][p-1-i], end=" ")
-    print()
+        for j in range(p):
+            if i == j:
+                print(f"{matriz[i][j]:4}", end="")
+            else:
+                print("    ", end="")
+        print()
 
-    print("Triangular superior:", end=" ")
+    print("\nDiagonal secundaria:")
     for i in range(p):
-        for j in range(i+1, p):
-            print(matriz[i][j], end=" ")
-    print()
+        for j in range(p):
+            if j == p-1-i:
+                print(f"{matriz[i][j]:4}", end="")
+            else:
+                print("    ", end="")
+        print()
 
-    print("Triangular inferior:", end=" ")
-    for i in range(1, p):
-        for j in range(i):
-            print(matriz[i][j], end=" ")
-    print()
+    print("\nTriangular superior:")
+    for i in range(p):
+        for j in range(p):
+            if j > i:
+                print(f"{matriz[i][j]:4}", end="")
+            else:
+                print("    ", end="")
+        print()
+
+    print("\nTriangular inferior:")
+    for i in range(p):
+        for j in range(p):
+            if j < i:
+                print(f"{matriz[i][j]:4}", end="")
+            else:
+                print("    ", end="")
+        print()
 
 def ejercicio4():
     empleados = 3  
